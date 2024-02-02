@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    .container{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-20%);
+      display:flex;
+      flex-direction:column;
+      background-color:white;
+      padding:25px;
+      border-radius:15px;
+      row-gap:0px;
+      max-width:650px;
+    }
+    .image{
+      width:600px;
+      border-radius:15px;
+    }
+
+    body{
+      background-color:hsl(29, 53%, 90%);
+      color:hsl(0, 0%, 24%);
+      font-family:'Outfit';
+    }
+
+    h2{
+      color:hsl(332, 27%, 48%);
+    
+    }
+
+    .redBox{
+      padding:10px;
+      background-color: hsl(322, 100%, 98%);
+    }
+
+    .brightRedText{
+      color:hsl(336, 39%, 37%);
+      font-weight:bold; 
+    }
+
+ 
+
+    .title,.ingTitle,h2{
+      margin-bottom:0;
+    }
+
+    hr{
+      width:585px;
+    }
+    .smallDesc{
+      margin-bottom:25px;
+    }
+
+    .bolded{
+      font-weight:bold;
+    }
+
+    .smallDesc p,.ulList,.olList{
+      line-height:1.5em;
+    }
+
+    .table{
+      line-height:2em;
+    }
+
+    li::marker{
+      color:hsl(336, 39%, 37%);
+      font-weight:bold;
+ 
+    }
+
+    ul,ol{
+      padding-left:1.2em;
+    }
+
+    .tableLine{
+      border-bottom:1px solid hsl(0, 0%, 55%);
+ 
+    }
+
+    table {
+        border-collapse: collapse;
+        row-gap:5px;
+      }     
+
+    .centeredText{
+      padding-left:25px;
+      height:40px;
+      color:hsl(0, 0%, 24%);
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <img src="assets/images/image-omelette.jpeg" class="image">
+    <h1 class="title">Simple Omelette Recipe</h1>
+
+    <p class="smallDesc">
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+
+    <div class="redBox">
+      <p class="brightRedText">
+        Preparation time
+      </p>
+      <ul class="ulList">
+        <li>Total: Approximately 10 minutes</li>
+        <li>Preparation: 5 minutes</li>
+        <li>Cooking: 5 minutes</li>
+      </ul>
+    </div>
+
+    <h2 class="ingTitle">Ingredients</h2>
+    <ul class="ulList">
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+
+    <hr>
+    <h2>Instructions</h2>
+    
+    <ol class="olList">
+      <li><span class="bolded">Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li><span class="bolded">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li><span class="bolded">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+      <li><span class="bolded">Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      <li><span class="bolded">Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><span class="bolded">Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+    <hr>
+    <h2>Nutrition</h2>
+  
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+    <table>
+      <tr class="tableLine">
+        <td class="centeredText">Calories</td>
+        <td class="brightRedText" >277kcal</td>
+        
+      </tr>
+      
+      <tr class="tableLine">
+        
+        <td class="centeredText">Carbs</td>
+        <td class="brightRedText">0g</td>
+        
+      </tr>
+     
+      <tr class="tableLine">
+        <td class="centeredText">Protein</td>
+        <td class="brightRedText">20g</td>
+        
+      </tr>
+     
+      <tr>
+        <td class="centeredText">Fat</td>
+        <td class="brightRedText">22g</td>
+      </tr>
+    </table>
+  </main>
+  
+  
+
+</body>
+</html>
